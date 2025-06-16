@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yaxye Ali Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+    :root {
+      --primary: #0054a6; /* Original blue color */
+      --secondary: #65748b; /* Soft grey for text */
+      --background: #f4f6f9;
+      --accent: #6c90d3;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--background);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    .container {
+      display: flex;
+      max-width: 800px; /* Constrained width for letter-size paper */
+      margin: 40px auto;
+      background: var(--white);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      /* Removed rounded corners */
+    }
+
+    .sidebar {
+      width: 230px; /* Sidebar width optimized for letter-size */
+      background: var(--primary);
+      color: var(--white);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px; /* Reduced gap for a balanced look */
+    }
+
+    .sidebar h1 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .sidebar p {
+      font-size: 13px;
+      opacity: 0.85;
+    }
+
+    .sidebar ul {
+      list-style-type: disc;
+      padding-left: 20px; /* Added padding for bullet points */
+    }
+
+    .sidebar ul li {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .main {
+      flex: 1;
+      padding: 30px;
+      background: var(--white);
+      border-left: 2px solid #f0f0f0;
+    }
+
+    .main h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 12px;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 6px;
+    }
+
+    .main h3 {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .main p, .main ul li {
+      font-size: 13px; /* Uniform font size for all text in main content */
+      margin-bottom: 10px;
+    }
+
+    .main .org {
+      font-style: italic;
+      color: var(--secondary);
+    }
+
+    .main .date {
+      font-size: 12px;
+      color: var(--secondary);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        margin: 20px;
+      }
+
+      .sidebar {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .main {
+        padding: 20px;
+      }
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        font-size: 12px; /* Slightly smaller text for print */
+      }
+
+      .container {
+        width: 100%;
+        padding: 0;
+        box-shadow: none;
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+      }
+
+      .sidebar, .main {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+      }
+
+      .sidebar {
+        background: var(--primary);
+        display: none; /* Hide sidebar in print view */
+      }
+
+      .main {
+        border-radius: 0;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .main h2 {
+        font-size: 18px;
+      }
+
+      .main ul li {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <aside class="sidebar">
+    <div>
+      <h1>Yaxye Ali</h1>
+      <p><i class="fas fa-map-marker-alt"></i> St. Cloud, MN</p>
+      <p><i class="fas fa-phone"></i> 320-470-8036</p>
+      <p>
+        <i class="fas fa-envelope"></i>
+        <span style="color: var(--white);">YaxyeAli00@gmail.com</span>
+      </p>
+    </div>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Microsoft Office (Word, PowerPoint, Excel)</li>
+        <li>Quick learner with new technology and software</li>
+        <li>Strong verbal and written communication skills</li>
+        <li>Reliable team player with excellent interpersonal skills</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Personal Traits</h2>
+      <ul>
+        <li>Dependable and punctual</li>
+        <li>Self-motivated with a strong desire to learn</li>
+        <li>Adaptable and able to work effectively under supervision</li>
+        <li>Friendly and approachable, with a positive attitude</li>
+      </ul>
+    </section>
+  </aside>
+
+  <main class="main">
+    <section>
+      <h2>Objective</h2>
+      <p>
+        Motivated high school and college student seeking a part-time position to develop professional skills and contribute strong communication and technology abilities. Eager to earn income to support transportation to school and maintain academic success at St. Cloud State University.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <h3>St. Cloud State University</h3>
+      <p class="org">Associate’s Degree in Progress</p>
+      <p class="date">Expected Graduation: 2026</p>
+
+      <h3>Tech High School</h3>
+      <p class="org">High School Diploma in Progress</p>
+      <p class="date">Expected Graduation: 2026</p>
+    </section>
+
+    <section>
+      <h2>Volunteer Experience</h2>
+      <h3>Youth Coordinator</h3>
+      <p class="org">Hooyo Hour, St. Cloud, MN</p>
+      <p class="date">2017 to current</p>
+      <ul>
+        <li>Plan and coordinate weekly youth engagement events for 30+ participants</li>
+        <li>Collaborate with team members to ensure smooth event execution</li>
+        <li>Foster a welcoming and supportive environment for community youth</li>
+      </ul>
+
+      <h3>Teacher’s Assistant</h3>
+      <p class="org">Islamic Center of St. Cloud</p>
+      <p class="date">2023 to current</p>
+      <ul>
+        <li>Support teachers in delivering weekend educational sessions</li>
+        <li>Assist younger students with assignments and maintaining focus</li>
+        <li>Help prepare class materials and organize learning activities</li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+</body>
+</html>
